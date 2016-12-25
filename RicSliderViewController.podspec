@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "RicSliderViewController"
-  s.version      = "1.0"
+  s.version      = "0.0.1"
   s.summary      = "a slider style ViewController."
 
   # This description is used to generate tags and improve search results.
