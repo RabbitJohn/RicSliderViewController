@@ -10,6 +10,7 @@
 		1355F2571E0FFBF7008540B3 /* RicSliderViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1355F24D1E0FFBF7008540B3 /* RicSliderViewController.framework */; };
 		1355F25C1E0FFBF7008540B3 /* RicSliderViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1355F25B1E0FFBF7008540B3 /* RicSliderViewControllerTests.swift */; };
 		1355F25E1E0FFBF7008540B3 /* RicSliderViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1355F2501E0FFBF7008540B3 /* RicSliderViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1355F2681E0FFE2D008540B3 /* RicSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1355F2671E0FFE2D008540B3 /* RicSliderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		1355F2561E0FFBF7008540B3 /* RicSliderViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RicSliderViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1355F25B1E0FFBF7008540B3 /* RicSliderViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RicSliderViewControllerTests.swift; sourceTree = "<group>"; };
 		1355F25D1E0FFBF7008540B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1355F2671E0FFE2D008540B3 /* RicSliderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RicSliderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				1355F2501E0FFBF7008540B3 /* RicSliderViewController.h */,
 				1355F2511E0FFBF7008540B3 /* Info.plist */,
+				1355F2671E0FFE2D008540B3 /* RicSliderViewController.swift */,
 			);
 			path = RicSliderViewController;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					1355F24C1E0FFBF7008540B3 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					1355F2551E0FFBF7008540B3 = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1355F2681E0FFE2D008540B3 /* RicSliderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +325,7 @@
 		1355F2621E0FFBF7008540B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -331,6 +337,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rice.creation.RicSliderViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -338,6 +345,7 @@
 		1355F2631E0FFBF7008540B3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +364,7 @@
 		1355F2651E0FFBF7008540B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = RicSliderViewControllerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rice.creation.RicSliderViewControllerTests;
@@ -367,6 +376,7 @@
 		1355F2661E0FFBF7008540B3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = RicSliderViewControllerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rice.creation.RicSliderViewControllerTests;
@@ -394,6 +404,7 @@
 				1355F2631E0FFBF7008540B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1355F2641E0FFBF7008540B3 /* Build configuration list for PBXNativeTarget "RicSliderViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +413,7 @@
 				1355F2661E0FFBF7008540B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
