@@ -15,7 +15,7 @@ open class RicSliderViewController: UINavigationController,UIGestureRecognizerDe
     public var toleranceOffsetToRightMargin:CGFloat = 80
     /// - Parameter vcs:
     fileprivate let panGesture:UIPanGestureRecognizer = UIPanGestureRecognizer()
-    
+    fileprivate var tapGesture:UITapGestureRecognizer?
     fileprivate var viewFrameOriX:CGFloat = 0
     fileprivate var oriX:CGFloat = 0
     fileprivate var offset:CGFloat = 0
@@ -40,7 +40,7 @@ open class RicSliderViewController: UINavigationController,UIGestureRecognizerDe
     }
 }
 
-// MARK: - Slider operation.
+// MARK: - gestures operation.
 extension RicSliderViewController{
     
     fileprivate func addSlideOperation(){
@@ -86,9 +86,26 @@ extension RicSliderViewController{
         UIView.animate(withDuration: 0.25, animations: {
             self.view.frame.origin.x = slideToRight == true ? self.getToleranceOffset():0
         })
+        if self.tapGesture == nil{
+            self.tapGesture = UITapGestureRecognizer()
+            self.tapGesture?.addTarget(self, action: #selector(RicSliderViewController.tapAction))
+        }
+        if(slideToRight == true){
+            self.view.addGestureRecognizer(self.tapGesture!)
+        }else{
+            if (self.view.gestureRecognizers?.contains(self.tapGesture!))! == true{
+                self.view.removeGestureRecognizer(self.tapGesture!)
+            }
+        }
     }
     
-    
+    @objc private func tapAction(){
+        if(self.isMoveToRight == true){
+            self.slideWithAnimation(false)
+        }else{
+            self.slideWithAnimation(true)
+        }
+    }
     open override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         if(object != nil ){
             // TODO: do some judgement here.
@@ -105,7 +122,7 @@ extension RicSliderViewController{
     
 }
 
-extension RicSliderViewController:CAAnimationDelegate{
+extension RicSliderViewController{
     
     fileprivate func getToleranceOffset()->CGFloat{
         let toteranceOffset = max(self.view.bounds.width - self.toleranceOffsetToRightMargin, 0)
