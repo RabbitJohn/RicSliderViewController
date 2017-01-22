@@ -11,6 +11,8 @@
 		1355F25C1E0FFBF7008540B3 /* RicSliderViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1355F25B1E0FFBF7008540B3 /* RicSliderViewControllerTests.swift */; };
 		1355F25E1E0FFBF7008540B3 /* RicSliderViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1355F2501E0FFBF7008540B3 /* RicSliderViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1355F2681E0FFE2D008540B3 /* RicSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1355F2671E0FFE2D008540B3 /* RicSliderViewController.swift */; };
+		1355F2AC1E100EEB008540B3 /* RicMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1355F2AA1E100EEB008540B3 /* RicMenuViewController.swift */; };
+		1355F2AD1E100EEB008540B3 /* RicWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1355F2AB1E100EEB008540B3 /* RicWindow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,8 @@
 		1355F25B1E0FFBF7008540B3 /* RicSliderViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RicSliderViewControllerTests.swift; sourceTree = "<group>"; };
 		1355F25D1E0FFBF7008540B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1355F2671E0FFE2D008540B3 /* RicSliderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RicSliderViewController.swift; sourceTree = "<group>"; };
+		1355F2AA1E100EEB008540B3 /* RicMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RicMenuViewController.swift; sourceTree = "<group>"; };
+		1355F2AB1E100EEB008540B3 /* RicWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RicWindow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 		1355F24F1E0FFBF7008540B3 /* RicSliderViewController */ = {
 			isa = PBXGroup;
 			children = (
+				1355F2AA1E100EEB008540B3 /* RicMenuViewController.swift */,
+				1355F2AB1E100EEB008540B3 /* RicWindow.swift */,
 				1355F2501E0FFBF7008540B3 /* RicSliderViewController.h */,
 				1355F2511E0FFBF7008540B3 /* Info.plist */,
 				1355F2671E0FFE2D008540B3 /* RicSliderViewController.swift */,
@@ -200,6 +206,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1355F2AD1E100EEB008540B3 /* RicWindow.swift in Sources */,
+				1355F2AC1E100EEB008540B3 /* RicMenuViewController.swift in Sources */,
 				1355F2681E0FFE2D008540B3 /* RicSliderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

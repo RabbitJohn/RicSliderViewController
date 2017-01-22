@@ -1,0 +1,16 @@
+PODS:
+  - RicSliderViewController (0.0.1)
+
+DEPENDENCIES:
+  - RicSliderViewController (from `..`)
+
+EXTERNAL SOURCES:
+  RicSliderViewController:
+    :path: ..
+
+SPEC CHECKSUMS:
+  RicSliderViewController: bf628cb39b09c8fc236fb04d30146b29282aec20
+
+PODFILE CHECKSUM: 2c00e27a22a88c74eff73c12a8ba1599118d6126
+
+COCOAPODS: 1.1.1

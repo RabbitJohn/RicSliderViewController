@@ -1,0 +1,716 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1355F2761E1001AD008540B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1355F2751E1001AD008540B3 /* AppDelegate.swift */; };
+		1355F27D1E1001AD008540B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1355F27C1E1001AD008540B3 /* Assets.xcassets */; };
+		1355F28B1E1001AD008540B3 /* RicSliderViewControllerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1355F28A1E1001AD008540B3 /* RicSliderViewControllerDemoTests.swift */; };
+		1355F2961E1001AD008540B3 /* RicSliderViewControllerDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1355F2951E1001AD008540B3 /* RicSliderViewControllerDemoUITests.swift */; };
+		1355F2A51E100672008540B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1355F2A31E100672008540B3 /* LaunchScreen.storyboard */; };
+		3B1AA3079C28CB5ADCCE764F /* Pods_RicSliderViewControllerDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5877F571CBEED6C6C522708 /* Pods_RicSliderViewControllerDemoTests.framework */; };
+		3C7C6F6DBCAAE2DF043F3942 /* Pods_RicSliderViewControllerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3219891C1D5D76B016C7430E /* Pods_RicSliderViewControllerDemo.framework */; };
+		C2836F4319E52608A2B5349A /* Pods_RicSliderViewControllerDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B79F9365A857153D0B03F193 /* Pods_RicSliderViewControllerDemoUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1355F2871E1001AD008540B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1355F26A1E1001AD008540B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1355F2711E1001AD008540B3;
+			remoteInfo = RicSliderViewControllerDemo;
+		};
+		1355F2921E1001AD008540B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1355F26A1E1001AD008540B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1355F2711E1001AD008540B3;
+			remoteInfo = RicSliderViewControllerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		108392466B860C14FCFDED04 /* Pods-RicSliderViewControllerDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RicSliderViewControllerDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RicSliderViewControllerDemoTests/Pods-RicSliderViewControllerDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		1355F2721E1001AD008540B3 /* RicSliderViewControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RicSliderViewControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1355F2751E1001AD008540B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1355F27C1E1001AD008540B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1355F2811E1001AD008540B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1355F2861E1001AD008540B3 /* RicSliderViewControllerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RicSliderViewControllerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1355F28A1E1001AD008540B3 /* RicSliderViewControllerDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RicSliderViewControllerDemoTests.swift; sourceTree = "<group>"; };
+		1355F28C1E1001AD008540B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1355F2911E1001AD008540B3 /* RicSliderViewControllerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RicSliderViewControllerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1355F2951E1001AD008540B3 /* RicSliderViewControllerDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RicSliderViewControllerDemoUITests.swift; sourceTree = "<group>"; };
+		1355F2971E1001AD008540B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1355F2A41E100672008540B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2FD9FBBDE6628DF97DAFAE70 /* Pods-RicSliderViewControllerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RicSliderViewControllerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RicSliderViewControllerDemo/Pods-RicSliderViewControllerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		3219891C1D5D76B016C7430E /* Pods_RicSliderViewControllerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RicSliderViewControllerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36DFB44F4156964FF2F460B8 /* Pods-RicSliderViewControllerDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RicSliderViewControllerDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RicSliderViewControllerDemoUITests/Pods-RicSliderViewControllerDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		83428252BD0BF13A803B2CEC /* Pods-RicSliderViewControllerDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RicSliderViewControllerDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RicSliderViewControllerDemoTests/Pods-RicSliderViewControllerDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B5877F571CBEED6C6C522708 /* Pods_RicSliderViewControllerDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RicSliderViewControllerDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B79F9365A857153D0B03F193 /* Pods_RicSliderViewControllerDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RicSliderViewControllerDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE04B0916F2FCEE35670FB74 /* Pods-RicSliderViewControllerDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RicSliderViewControllerDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RicSliderViewControllerDemoUITests/Pods-RicSliderViewControllerDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F5D863AD3CE3071965B1BEF3 /* Pods-RicSliderViewControllerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RicSliderViewControllerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RicSliderViewControllerDemo/Pods-RicSliderViewControllerDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1355F26F1E1001AD008540B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C7C6F6DBCAAE2DF043F3942 /* Pods_RicSliderViewControllerDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1355F2831E1001AD008540B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B1AA3079C28CB5ADCCE764F /* Pods_RicSliderViewControllerDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1355F28E1E1001AD008540B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2836F4319E52608A2B5349A /* Pods_RicSliderViewControllerDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1355F2691E1001AD008540B3 = {
+			isa = PBXGroup;
+			children = (
+				1355F2741E1001AD008540B3 /* RicSliderViewControllerDemo */,
+				1355F2891E1001AD008540B3 /* RicSliderViewControllerDemoTests */,
+				1355F2941E1001AD008540B3 /* RicSliderViewControllerDemoUITests */,
+				1355F2731E1001AD008540B3 /* Products */,
+				61793C5B70D31E6DC3970AC9 /* Pods */,
+				AB4FA88E68F4D5C6EF86A259 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1355F2731E1001AD008540B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1355F2721E1001AD008540B3 /* RicSliderViewControllerDemo.app */,
+				1355F2861E1001AD008540B3 /* RicSliderViewControllerDemoTests.xctest */,
+				1355F2911E1001AD008540B3 /* RicSliderViewControllerDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1355F2741E1001AD008540B3 /* RicSliderViewControllerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1355F2A31E100672008540B3 /* LaunchScreen.storyboard */,
+				1355F2751E1001AD008540B3 /* AppDelegate.swift */,
+				1355F27C1E1001AD008540B3 /* Assets.xcassets */,
+				1355F2811E1001AD008540B3 /* Info.plist */,
+			);
+			path = RicSliderViewControllerDemo;
+			sourceTree = "<group>";
+		};
+		1355F2891E1001AD008540B3 /* RicSliderViewControllerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				1355F28A1E1001AD008540B3 /* RicSliderViewControllerDemoTests.swift */,
+				1355F28C1E1001AD008540B3 /* Info.plist */,
+			);
+			path = RicSliderViewControllerDemoTests;
+			sourceTree = "<group>";
+		};
+		1355F2941E1001AD008540B3 /* RicSliderViewControllerDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1355F2951E1001AD008540B3 /* RicSliderViewControllerDemoUITests.swift */,
+				1355F2971E1001AD008540B3 /* Info.plist */,
+			);
+			path = RicSliderViewControllerDemoUITests;
+			sourceTree = "<group>";
+		};
+		61793C5B70D31E6DC3970AC9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2FD9FBBDE6628DF97DAFAE70 /* Pods-RicSliderViewControllerDemo.debug.xcconfig */,
+				F5D863AD3CE3071965B1BEF3 /* Pods-RicSliderViewControllerDemo.release.xcconfig */,
+				83428252BD0BF13A803B2CEC /* Pods-RicSliderViewControllerDemoTests.debug.xcconfig */,
+				108392466B860C14FCFDED04 /* Pods-RicSliderViewControllerDemoTests.release.xcconfig */,
+				BE04B0916F2FCEE35670FB74 /* Pods-RicSliderViewControllerDemoUITests.debug.xcconfig */,
+				36DFB44F4156964FF2F460B8 /* Pods-RicSliderViewControllerDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AB4FA88E68F4D5C6EF86A259 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3219891C1D5D76B016C7430E /* Pods_RicSliderViewControllerDemo.framework */,
+				B5877F571CBEED6C6C522708 /* Pods_RicSliderViewControllerDemoTests.framework */,
+				B79F9365A857153D0B03F193 /* Pods_RicSliderViewControllerDemoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1355F2711E1001AD008540B3 /* RicSliderViewControllerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1355F29A1E1001AD008540B3 /* Build configuration list for PBXNativeTarget "RicSliderViewControllerDemo" */;
+			buildPhases = (
+				25F47FAB336F92455308C2D4 /* [CP] Check Pods Manifest.lock */,
+				1355F26E1E1001AD008540B3 /* Sources */,
+				1355F26F1E1001AD008540B3 /* Frameworks */,
+				1355F2701E1001AD008540B3 /* Resources */,
+				1BB88A5FB15FDC59A2CDA21F /* [CP] Embed Pods Frameworks */,
+				C1C947FEF53575413261066F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RicSliderViewControllerDemo;
+			productName = RicSliderViewControllerDemo;
+			productReference = 1355F2721E1001AD008540B3 /* RicSliderViewControllerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1355F2851E1001AD008540B3 /* RicSliderViewControllerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1355F29D1E1001AD008540B3 /* Build configuration list for PBXNativeTarget "RicSliderViewControllerDemoTests" */;
+			buildPhases = (
+				9153915F9B9B8C59B9809BED /* [CP] Check Pods Manifest.lock */,
+				1355F2821E1001AD008540B3 /* Sources */,
+				1355F2831E1001AD008540B3 /* Frameworks */,
+				1355F2841E1001AD008540B3 /* Resources */,
+				F5387EC9D5A018162B2714AA /* [CP] Embed Pods Frameworks */,
+				32400987CCFE35B337B58443 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1355F2881E1001AD008540B3 /* PBXTargetDependency */,
+			);
+			name = RicSliderViewControllerDemoTests;
+			productName = RicSliderViewControllerDemoTests;
+			productReference = 1355F2861E1001AD008540B3 /* RicSliderViewControllerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1355F2901E1001AD008540B3 /* RicSliderViewControllerDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1355F2A01E1001AD008540B3 /* Build configuration list for PBXNativeTarget "RicSliderViewControllerDemoUITests" */;
+			buildPhases = (
+				2D921337EC762E58A75D92D0 /* [CP] Check Pods Manifest.lock */,
+				1355F28D1E1001AD008540B3 /* Sources */,
+				1355F28E1E1001AD008540B3 /* Frameworks */,
+				1355F28F1E1001AD008540B3 /* Resources */,
+				BA882109218FE939157268D7 /* [CP] Embed Pods Frameworks */,
+				B9556CCE0016FCA2775B5F04 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1355F2931E1001AD008540B3 /* PBXTargetDependency */,
+			);
+			name = RicSliderViewControllerDemoUITests;
+			productName = RicSliderViewControllerDemoUITests;
+			productReference = 1355F2911E1001AD008540B3 /* RicSliderViewControllerDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1355F26A1E1001AD008540B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = rice;
+				TargetAttributes = {
+					1355F2711E1001AD008540B3 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					1355F2851E1001AD008540B3 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1355F2711E1001AD008540B3;
+					};
+					1355F2901E1001AD008540B3 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1355F2711E1001AD008540B3;
+					};
+				};
+			};
+			buildConfigurationList = 1355F26D1E1001AD008540B3 /* Build configuration list for PBXProject "RicSliderViewControllerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1355F2691E1001AD008540B3;
+			productRefGroup = 1355F2731E1001AD008540B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1355F2711E1001AD008540B3 /* RicSliderViewControllerDemo */,
+				1355F2851E1001AD008540B3 /* RicSliderViewControllerDemoTests */,
+				1355F2901E1001AD008540B3 /* RicSliderViewControllerDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1355F2701E1001AD008540B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1355F27D1E1001AD008540B3 /* Assets.xcassets in Resources */,
+				1355F2A51E100672008540B3 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1355F2841E1001AD008540B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1355F28F1E1001AD008540B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BB88A5FB15FDC59A2CDA21F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RicSliderViewControllerDemo/Pods-RicSliderViewControllerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25F47FAB336F92455308C2D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2D921337EC762E58A75D92D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		32400987CCFE35B337B58443 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RicSliderViewControllerDemoTests/Pods-RicSliderViewControllerDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9153915F9B9B8C59B9809BED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B9556CCE0016FCA2775B5F04 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RicSliderViewControllerDemoUITests/Pods-RicSliderViewControllerDemoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA882109218FE939157268D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RicSliderViewControllerDemoUITests/Pods-RicSliderViewControllerDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1C947FEF53575413261066F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RicSliderViewControllerDemo/Pods-RicSliderViewControllerDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5387EC9D5A018162B2714AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RicSliderViewControllerDemoTests/Pods-RicSliderViewControllerDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1355F26E1E1001AD008540B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1355F2761E1001AD008540B3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1355F2821E1001AD008540B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1355F28B1E1001AD008540B3 /* RicSliderViewControllerDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1355F28D1E1001AD008540B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1355F2961E1001AD008540B3 /* RicSliderViewControllerDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1355F2881E1001AD008540B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1355F2711E1001AD008540B3 /* RicSliderViewControllerDemo */;
+			targetProxy = 1355F2871E1001AD008540B3 /* PBXContainerItemProxy */;
+		};
+		1355F2931E1001AD008540B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1355F2711E1001AD008540B3 /* RicSliderViewControllerDemo */;
+			targetProxy = 1355F2921E1001AD008540B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1355F2A31E100672008540B3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1355F2A41E100672008540B3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1355F2981E1001AD008540B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1355F2991E1001AD008540B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1355F29B1E1001AD008540B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FD9FBBDE6628DF97DAFAE70 /* Pods-RicSliderViewControllerDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RicSliderViewController\"",
+				);
+				INFOPLIST_FILE = RicSliderViewControllerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rice.creation.RicSliderViewControllerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1355F29C1E1001AD008540B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5D863AD3CE3071965B1BEF3 /* Pods-RicSliderViewControllerDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RicSliderViewController\"",
+				);
+				INFOPLIST_FILE = RicSliderViewControllerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rice.creation.RicSliderViewControllerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		1355F29E1E1001AD008540B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83428252BD0BF13A803B2CEC /* Pods-RicSliderViewControllerDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RicSliderViewControllerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rice.creation.RicSliderViewControllerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RicSliderViewControllerDemo.app/RicSliderViewControllerDemo";
+			};
+			name = Debug;
+		};
+		1355F29F1E1001AD008540B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 108392466B860C14FCFDED04 /* Pods-RicSliderViewControllerDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RicSliderViewControllerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rice.creation.RicSliderViewControllerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RicSliderViewControllerDemo.app/RicSliderViewControllerDemo";
+			};
+			name = Release;
+		};
+		1355F2A11E1001AD008540B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE04B0916F2FCEE35670FB74 /* Pods-RicSliderViewControllerDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = RicSliderViewControllerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rice.creation.RicSliderViewControllerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RicSliderViewControllerDemo;
+			};
+			name = Debug;
+		};
+		1355F2A21E1001AD008540B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36DFB44F4156964FF2F460B8 /* Pods-RicSliderViewControllerDemoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = RicSliderViewControllerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rice.creation.RicSliderViewControllerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RicSliderViewControllerDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1355F26D1E1001AD008540B3 /* Build configuration list for PBXProject "RicSliderViewControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1355F2981E1001AD008540B3 /* Debug */,
+				1355F2991E1001AD008540B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1355F29A1E1001AD008540B3 /* Build configuration list for PBXNativeTarget "RicSliderViewControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1355F29B1E1001AD008540B3 /* Debug */,
+				1355F29C1E1001AD008540B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1355F29D1E1001AD008540B3 /* Build configuration list for PBXNativeTarget "RicSliderViewControllerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1355F29E1E1001AD008540B3 /* Debug */,
+				1355F29F1E1001AD008540B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1355F2A01E1001AD008540B3 /* Build configuration list for PBXNativeTarget "RicSliderViewControllerDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1355F2A11E1001AD008540B3 /* Debug */,
+				1355F2A21E1001AD008540B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1355F26A1E1001AD008540B3 /* Project object */;
+}

@@ -1,0 +1,28 @@
+{
+  "name": "RicSliderViewController",
+  "version": "0.0.1",
+  "summary": "a slider style ViewController.",
+  "description": "a simple implementation of slider view controller",
+  "homepage": "https://github.com/zLihuan/RicSliderViewController",
+  "license": {
+    "type": "MIT",
+    "file": "FILE_LICENSE"
+  },
+  "authors": {
+    "rice": "625482408@qq.com"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "https://github.com/zLihuan/RicSliderViewController.git",
+    "tag": "0.0.1"
+  },
+  "source_files": [
+    "RicSliderViewController",
+    "RicSliderViewController/**/*.{swift}"
+  ],
+  "exclude_files": "RicSliderViewController/Exclude",
+  "public_header_files": "RicSliderViewController/**/*.h",
+  "requires_arc": true
+}

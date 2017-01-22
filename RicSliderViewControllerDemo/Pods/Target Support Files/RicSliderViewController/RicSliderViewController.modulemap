@@ -1,0 +1,6 @@
+framework module RicSliderViewController {
+  umbrella header "RicSliderViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}
