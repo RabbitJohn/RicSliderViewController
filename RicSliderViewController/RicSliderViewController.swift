@@ -61,14 +61,14 @@ extension RicSliderViewController{
         let absXV = fabs(velocity.x)
         var isBiggerThanPreviousValue =  absXV > fabs(self.maximumVelocityX)
         //TODO:快速滑动时单方向判断
-//        var isSameDirection = true
-//        if(velocity.x != 0){
-//            isSameDirection = self.maximumVelocityX/velocity.x > 0
-//        }
+        var isSameDirection = true
+        if(velocity.x != 0){
+            isSameDirection = self.maximumVelocityX/velocity.x >= 0
+        }
         self.isMoveToRight = velocity.x > 0
         
         if(panGes.state != .ended){
-            if isBiggerThanPreviousValue == true && absXV > 1200{
+            if isSameDirection && isBiggerThanPreviousValue == true && absXV > 1600{
 
                 self.couldContinueGestureRecgnize = false
                 self.maximumVelocityX = velocity.x
