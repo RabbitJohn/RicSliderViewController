@@ -236,6 +236,7 @@
 				TargetAttributes = {
 					1355F2711E1001AD008540B3 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 6S87SG4XWC;
 						ProvisioningStyle = Automatic;
 					};
 					1355F2851E1001AD008540B3 = {
@@ -584,11 +585,13 @@
 			baseConfigurationReference = 2FD9FBBDE6628DF97DAFAE70 /* Pods-RicSliderViewControllerDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6S87SG4XWC;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)/**",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RicSliderViewController\"",
 				);
 				INFOPLIST_FILE = RicSliderViewControllerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rice.creation.RicSliderViewControllerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -601,11 +604,13 @@
 			baseConfigurationReference = F5D863AD3CE3071965B1BEF3 /* Pods-RicSliderViewControllerDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6S87SG4XWC;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)/**",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RicSliderViewController\"",
 				);
 				INFOPLIST_FILE = RicSliderViewControllerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rice.creation.RicSliderViewControllerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

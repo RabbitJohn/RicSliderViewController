@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let mainWindow:RicWindow = RicWindow.mainWindow
         mainWindow.makeKeyAndVisible()
+        mainWindow.makeKeyAndVisible()
         self.window = mainWindow
 
         // Override point for customization after application launch.

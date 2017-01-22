@@ -21,7 +21,7 @@ open class RicSliderViewController: UINavigationController,UIGestureRecognizerDe
     fileprivate var offset:CGFloat = 0
     fileprivate var couldContinueGestureRecgnize:Bool = true
     fileprivate var isMoveToRight:Bool = true
-    
+    fileprivate var maximumVelocityX:CGFloat = 0
     override open func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
@@ -47,28 +47,57 @@ extension RicSliderViewController{
         panGesture.addTarget(self
             , action: #selector(RicSliderViewController.tracePan(_:)))
         panGesture.delegate = self
-        panGesture.addObserver(self, forKeyPath: "state", options: NSKeyValueObservingOptions.new, context: nil)
         self.view.addGestureRecognizer(panGesture)
     }
 //    
     @objc fileprivate func tracePan(_ panGes:UIPanGestureRecognizer){
-        if(self.couldContinueGestureRecgnize == true){
-            let velocity = panGes.velocity(in: RicWindow.mainWindow)
-            self.isMoveToRight = velocity.x > 0
-            let locationInWindow:CGFloat = CGFloat(panGes.location(in: RicWindow.mainWindow).x)
-            // caculate the frame of the current VC's view and get the left margin. get the location of the finger in the window and minus the offset of the finger in the view as the the offset.
-            offset = CGFloat(locationInWindow - oriX);
-            //
-            var caculatedX = max(viewFrameOriX + offset,0)
-            
-            caculatedX = min(caculatedX, self.getToleranceOffset())
-            
-            if(caculatedX < self.view.bounds.maxX){
-                var frame:CGRect = self.view.frame
-                frame.origin.x = caculatedX
-                self.view.frame = frame
-            }
+        
+        if self.couldContinueGestureRecgnize == false{
+            return
         }
+        
+        // because we acturally use the finger drag the view and when we stop dragging .it has a nature slow down progress.so we should find out a maximum value to begin animation but the end of the dragging.
+        let velocity:CGPoint = panGes.velocity(in: RicWindow.mainWindow)
+        let absXV = fabs(velocity.x)
+        var isBiggerThanPreviousValue =  absXV > fabs(self.maximumVelocityX)
+        //TODO:快速滑动时单方向判断
+//        var isSameDirection = true
+//        if(velocity.x != 0){
+//            isSameDirection = self.maximumVelocityX/velocity.x > 0
+//        }
+        self.isMoveToRight = velocity.x > 0
+        
+        if(panGes.state != .ended){
+            if isBiggerThanPreviousValue == true && absXV > 1200{
+
+                self.couldContinueGestureRecgnize = false
+                self.maximumVelocityX = velocity.x
+                // 如果手势的状态是结束则执行下面这个操作。
+                self.slideWithAnimation(self.isMoveToRight)
+
+            }
+            else{
+                    let locationInWindow:CGFloat = CGFloat(panGes.location(in: RicWindow.mainWindow).x)
+                    // caculate the frame of the current VC's view and get the left margin. get the location of the finger in the window and minus the offset of the finger in the view as the the offset.
+                    offset = CGFloat(locationInWindow - oriX);
+                    //
+                    var caculatedX = max(viewFrameOriX + offset,0)
+                    
+                    caculatedX = min(caculatedX, self.getToleranceOffset())
+                    
+                    if(caculatedX < self.view.bounds.maxX){
+                        var frame:CGRect = self.view.frame
+                        frame.origin.x = caculatedX
+                        self.view.frame = frame
+                    }
+                }
+        }else{
+            
+            self.couldContinueGestureRecgnize = false
+            // 如果手势的状态是结束则执行下面这个操作。
+            self.slideWithAnimation(self.isMoveToRight)
+        }
+        
     }
     
     public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool{
@@ -83,40 +112,35 @@ extension RicSliderViewController{
     public func slideWithAnimation(_ slideToRight:Bool){
         // do slide operation here
         //
+        UIView.setAnimationCurve(.easeOut)
         UIView.animate(withDuration: 0.25, animations: {
             self.view.frame.origin.x = slideToRight == true ? self.getToleranceOffset():0
-        })
-        if self.tapGesture == nil{
-            self.tapGesture = UITapGestureRecognizer()
-            self.tapGesture?.addTarget(self, action: #selector(RicSliderViewController.tapAction))
-        }
-        if(slideToRight == true){
-            self.view.addGestureRecognizer(self.tapGesture!)
-        }else{
-            if (self.view.gestureRecognizers?.contains(self.tapGesture!))! == true{
-                self.view.removeGestureRecognizer(self.tapGesture!)
+        },completion:{
+            (Bool) in
+            
+            if self.tapGesture == nil{
+                self.tapGesture = UITapGestureRecognizer()
+                self.tapGesture?.addTarget(self, action: #selector(RicSliderViewController.tapAction))
             }
-        }
-    }
+            if(slideToRight == true){
+                self.view.addGestureRecognizer(self.tapGesture!)
+            }else{
+                if (self.view.gestureRecognizers?.contains(self.tapGesture!))! == true{
+                    self.view.removeGestureRecognizer(self.tapGesture!)
+                }
+            }
+            
+            UIView.setAnimationCurve(.easeInOut)
+            self.maximumVelocityX = 0
+            self.couldContinueGestureRecgnize = true
+        })
+  }
     
     @objc private func tapAction(){
         if(self.isMoveToRight == true){
             self.slideWithAnimation(false)
         }else{
             self.slideWithAnimation(true)
-        }
-    }
-    open override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        if(object != nil ){
-            // TODO: do some judgement here.
-            let ges:UIPanGestureRecognizer = object as! UIPanGestureRecognizer
-            if ges.state == .ended{
-                self.couldContinueGestureRecgnize = false
-                // 如果手势的状态是结束则执行下面这个操作。
-                self.slideWithAnimation(self.isMoveToRight)
-            }else if ges.state == .began{
-                self.couldContinueGestureRecgnize = true
-            }
         }
     }
     
