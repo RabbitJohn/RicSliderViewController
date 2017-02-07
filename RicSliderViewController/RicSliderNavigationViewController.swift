@@ -16,11 +16,13 @@ open class RicSliderNavigationViewController: UINavigationController,UIGestureRe
     /// - Parameter vcs:
     fileprivate let panGesture:UIPanGestureRecognizer = UIPanGestureRecognizer()
     fileprivate var tapGesture:UITapGestureRecognizer?
+
     fileprivate var viewFrameOriX:CGFloat = 0
     fileprivate var oriX:CGFloat = 0
     fileprivate var offset:CGFloat = 0
     fileprivate var couldContinueGestureRecgnize:Bool = true
     fileprivate var isMoveToRight:Bool = true
+    
     override open func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
@@ -46,29 +48,25 @@ extension RicSliderNavigationViewController{
         panGesture.delegate = self
         panGesture.addObserver(self, forKeyPath: "state", options: NSKeyValueObservingOptions.new, context: nil)
         self.view.addGestureRecognizer(panGesture)
-        
     }
     //
     @objc fileprivate func tracePan(_ panGes:UIPanGestureRecognizer){
-        
-        if self.couldContinueGestureRecgnize == false{
-            return
-        }
-        
-        let velocity = panGes.velocity(in: RicWindow.mainWindow)
-        self.isMoveToRight = velocity.x > 0
-        let locationInWindow:CGFloat = CGFloat(panGes.location(in: RicWindow.mainWindow).x)
-        // caculate the frame of the current VC's view and get the left margin. get the location of the finger in the window and minus the offset of the finger in the view as the the offset.
-        offset = CGFloat(locationInWindow - oriX);
-        //
-        var caculatedX = max(viewFrameOriX + offset,0)
-        
-        caculatedX = min(caculatedX, self.getToleranceOffset())
-        
-        if(caculatedX < self.view.bounds.maxX){
-            var frame:CGRect = self.view.frame
-            frame.origin.x = caculatedX
-            self.view.frame = frame
+        if(self.couldContinueGestureRecgnize == true && panGes.state != .ended){
+            let velocity = panGes.velocity(in: RicWindow.mainWindow)
+            self.isMoveToRight = velocity.x > 0
+            let locationInWindow:CGFloat = CGFloat(panGes.location(in: RicWindow.mainWindow).x)
+            // caculate the frame of the current VC's view and get the left margin. get the location of the finger in the window and minus the offset of the finger in the view as the the offset.
+            offset = CGFloat(locationInWindow - oriX);
+            //
+            var caculatedX = max(viewFrameOriX + offset,0)
+            
+            caculatedX = min(caculatedX, self.getToleranceOffset())
+            
+            if(caculatedX < self.view.bounds.maxX){
+                var frame:CGRect = self.view.frame
+                frame.origin.x = caculatedX
+                self.view.frame = frame
+            }
         }
     }
     
@@ -85,10 +83,6 @@ extension RicSliderNavigationViewController{
         // do slide operation here
         UIView.setAnimationCurve(.linear)
         UIView.animate(withDuration: 0.15, animations: {
-            self.view.frame.origin.x = slideToRight == true ? self.getToleranceOffset():0
-        },completion:{
-            (Bool) in
-            
             if self.tapGesture == nil{
                 self.tapGesture = UITapGestureRecognizer()
                 self.tapGesture?.addTarget(self, action: #selector(RicSliderNavigationViewController.tapAction))
@@ -100,9 +94,7 @@ extension RicSliderNavigationViewController{
                     self.view.removeGestureRecognizer(self.tapGesture!)
                 }
             }
-            
-            UIView.setAnimationCurve(.easeInOut)
-            self.couldContinueGestureRecgnize = true
+            self.view.frame.origin.x = slideToRight == true ? self.getToleranceOffset():0
         })
     }
     
@@ -113,6 +105,7 @@ extension RicSliderNavigationViewController{
             self.slideWithAnimation(true)
         }
     }
+
     open override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         if(object != nil ){
             let ges:UIPanGestureRecognizer = object as! UIPanGestureRecognizer
@@ -128,7 +121,7 @@ extension RicSliderNavigationViewController{
     
 }
 
-extension RicSliderNavigationViewController{
+extension RicSliderNavigationViewController:CAAnimationDelegate{
     
     fileprivate func getToleranceOffset()->CGFloat{
         let toteranceOffset = max(self.view.bounds.width - self.toleranceOffsetToRightMargin, 0)
