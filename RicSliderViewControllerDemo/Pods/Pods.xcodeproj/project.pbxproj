@@ -12,8 +12,8 @@
 		31378CB7E58D282629B64A929B034ADB /* Pods-RicSliderViewControllerDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E39E77626BCCAE88A563D2A3EE89CD23 /* Pods-RicSliderViewControllerDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		41D975FAE034EDBD76F02494AA2F7150 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		461FBFF519F8FA11C2409DFDEA29E8F8 /* RicWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CD7F8F3FFE7DBA84087E5C01977EEA /* RicWindow.swift */; };
-		53F4DE10D66B2DE7FBDCF0C984E60CBE /* RicSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB974C45C183D2ECF4FA8C8C74321B68 /* RicSliderViewController.swift */; };
-		5BB79AC9D9E892BF9449714113C8F2E8 /* RicMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EC0F5CD6755C293B6D0EF390FF556D /* RicMenuViewController.swift */; };
+		53F4DE10D66B2DE7FBDCF0C984E60CBE /* RicSliderNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB974C45C183D2ECF4FA8C8C74321B68 /* RicSliderNavigationViewController.swift */; };
+		5BB79AC9D9E892BF9449714113C8F2E8 /* RicMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EC0F5CD6755C293B6D0EF390FF556D /* RicMenuTableViewController.swift */; };
 		7A9ED55F54AE0CBA52C9ABF1ED839AEB /* Pods-RicSliderViewControllerDemoUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DAFAC29F8BFD7B122A605A01C6A8AA7B /* Pods-RicSliderViewControllerDemoUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89137A0DEC74FE9625D991F9A8135AA8 /* RicSliderViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D8DD613467A391A6D74E42B6111DBC /* RicSliderViewController-dummy.m */; };
 		8F6403F709A332E6F696D9AFAD2D0BF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
@@ -36,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0BC074E9443970E71153CC45F90090D2 /* Pods-RicSliderViewControllerDemoTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RicSliderViewControllerDemoTests.modulemap"; sourceTree = "<group>"; };
+		0BC074E9443970E71153CC45F90090D2 /* Pods-RicSliderViewControllerDemoTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RicSliderViewControllerDemoTests.modulemap"; sourceTree = "<group>"; };
 		174C7B469151697942B36952801C3E0A /* Pods-RicSliderViewControllerDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RicSliderViewControllerDemo-dummy.m"; sourceTree = "<group>"; };
 		1E365805C8FD93E3F02F3F389CC52FCB /* RicSliderViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RicSliderViewController.h; sourceTree = "<group>"; };
 		245D566A1F86B88B233A9F302C3FF4A9 /* Pods-RicSliderViewControllerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RicSliderViewControllerDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -51,36 +51,36 @@
 		5CB7DFC1872B745E9B07DCEB0BE9CF72 /* Pods-RicSliderViewControllerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RicSliderViewControllerDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		61466A2D27E09B45DB234D096E82D6D6 /* RicSliderViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RicSliderViewController.xcconfig; sourceTree = "<group>"; };
 		65D699FF14F2A819CEBC0143C66333A7 /* Pods-RicSliderViewControllerDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RicSliderViewControllerDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		71EC0F5CD6755C293B6D0EF390FF556D /* RicMenuViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RicMenuViewController.swift; sourceTree = "<group>"; };
+		71EC0F5CD6755C293B6D0EF390FF556D /* RicMenuTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RicMenuTableViewController.swift; sourceTree = "<group>"; };
 		74D8DD613467A391A6D74E42B6111DBC /* RicSliderViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RicSliderViewController-dummy.m"; sourceTree = "<group>"; };
 		83A034AEB22BDF84B32DF345ABD71F12 /* Pods-RicSliderViewControllerDemoUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RicSliderViewControllerDemoUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		84C76F81AD77F90F29466550A163B41C /* Pods-RicSliderViewControllerDemoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RicSliderViewControllerDemoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		91C09617BE9AAB3D63D52433AEF806E8 /* Pods-RicSliderViewControllerDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RicSliderViewControllerDemoTests.release.xcconfig"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		95A64BED6B763A7F551DFD1F009D5DF9 /* RicSliderViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RicSliderViewController-prefix.pch"; sourceTree = "<group>"; };
 		971E2CB65AD743C346DA202DC01C10CC /* Pods-RicSliderViewControllerDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RicSliderViewControllerDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		97BDCD7F295B7348C5DB0F457DA8A808 /* Pods-RicSliderViewControllerDemoUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RicSliderViewControllerDemoUITests-resources.sh"; sourceTree = "<group>"; };
-		9A002F8B3F20196648BCC22137433022 /* RicSliderViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = RicSliderViewController.modulemap; sourceTree = "<group>"; };
+		9A002F8B3F20196648BCC22137433022 /* RicSliderViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RicSliderViewController.modulemap; sourceTree = "<group>"; };
 		A36D76FB1BD2F36C874AC7878804DD4E /* Pods-RicSliderViewControllerDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RicSliderViewControllerDemo-resources.sh"; sourceTree = "<group>"; };
-		A4D8278824475B3B3FB3B9E2580237AA /* RicSliderViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RicSliderViewController.framework; path = RicSliderViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4D8278824475B3B3FB3B9E2580237AA /* RicSliderViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RicSliderViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8309D64BFC59C5273216C3ED2D2F0BA /* Pods-RicSliderViewControllerDemoTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RicSliderViewControllerDemoTests-frameworks.sh"; sourceTree = "<group>"; };
 		A9818DF94981874F03FD245F2F3FC395 /* Pods-RicSliderViewControllerDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RicSliderViewControllerDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		AB974C45C183D2ECF4FA8C8C74321B68 /* RicSliderViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RicSliderViewController.swift; sourceTree = "<group>"; };
+		AB974C45C183D2ECF4FA8C8C74321B68 /* RicSliderNavigationViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RicSliderNavigationViewController.swift; sourceTree = "<group>"; };
 		AFD8429B2B1D068958929A9C0F197307 /* Pods-RicSliderViewControllerDemoTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RicSliderViewControllerDemoTests-resources.sh"; sourceTree = "<group>"; };
 		B07E5840A4B8F49DD87F95424F6523D5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7CD7F8F3FFE7DBA84087E5C01977EEA /* RicWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RicWindow.swift; sourceTree = "<group>"; };
 		B9D1B3FE08CB5738CE04B13919A49540 /* Pods-RicSliderViewControllerDemoTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RicSliderViewControllerDemoTests-umbrella.h"; sourceTree = "<group>"; };
-		BE4E40895324272BEE62A111527E23CB /* Pods-RicSliderViewControllerDemoUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RicSliderViewControllerDemoUITests.modulemap"; sourceTree = "<group>"; };
-		C9AD93186C1625A5A67F4CE27E45DD30 /* Pods_RicSliderViewControllerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RicSliderViewControllerDemo.framework; path = "Pods-RicSliderViewControllerDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE4E40895324272BEE62A111527E23CB /* Pods-RicSliderViewControllerDemoUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RicSliderViewControllerDemoUITests.modulemap"; sourceTree = "<group>"; };
+		C9AD93186C1625A5A67F4CE27E45DD30 /* Pods_RicSliderViewControllerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RicSliderViewControllerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CBC681DA93DF83498DF228F3CF3B3008 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CF9C19249E556D0B40E32399E0EA25B2 /* Pods_RicSliderViewControllerDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RicSliderViewControllerDemoUITests.framework; path = "Pods-RicSliderViewControllerDemoUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF9C19249E556D0B40E32399E0EA25B2 /* Pods_RicSliderViewControllerDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RicSliderViewControllerDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFAC29F8BFD7B122A605A01C6A8AA7B /* Pods-RicSliderViewControllerDemoUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RicSliderViewControllerDemoUITests-umbrella.h"; sourceTree = "<group>"; };
 		DF3136AAE280194AF0435B541DAC12AA /* RicSliderViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RicSliderViewController-umbrella.h"; sourceTree = "<group>"; };
-		E0E1DE0A8FE1D10406A2187264FA341D /* Pods_RicSliderViewControllerDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RicSliderViewControllerDemoTests.framework; path = "Pods-RicSliderViewControllerDemoTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0E1DE0A8FE1D10406A2187264FA341D /* Pods_RicSliderViewControllerDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RicSliderViewControllerDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E39E77626BCCAE88A563D2A3EE89CD23 /* Pods-RicSliderViewControllerDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RicSliderViewControllerDemo-umbrella.h"; sourceTree = "<group>"; };
 		E911B001D2BF0904365AAC66A018EE03 /* Pods-RicSliderViewControllerDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RicSliderViewControllerDemo-frameworks.sh"; sourceTree = "<group>"; };
-		F0AE55BAF51230A1F83326F94AF5E23F /* Pods-RicSliderViewControllerDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RicSliderViewControllerDemo.modulemap"; sourceTree = "<group>"; };
+		F0AE55BAF51230A1F83326F94AF5E23F /* Pods-RicSliderViewControllerDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RicSliderViewControllerDemo.modulemap"; sourceTree = "<group>"; };
 		F8987410160460E63655DAC5A667E9E3 /* Pods-RicSliderViewControllerDemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RicSliderViewControllerDemoTests-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -257,12 +257,11 @@
 		ED88FDB3E48D2EFBFD6B4D43EAF91F4F /* RicSliderViewController */ = {
 			isa = PBXGroup;
 			children = (
-				71EC0F5CD6755C293B6D0EF390FF556D /* RicMenuViewController.swift */,
 				1E365805C8FD93E3F02F3F389CC52FCB /* RicSliderViewController.h */,
-				AB974C45C183D2ECF4FA8C8C74321B68 /* RicSliderViewController.swift */,
+				71EC0F5CD6755C293B6D0EF390FF556D /* RicMenuTableViewController.swift */,
+				AB974C45C183D2ECF4FA8C8C74321B68 /* RicSliderNavigationViewController.swift */,
 				B7CD7F8F3FFE7DBA84087E5C01977EEA /* RicWindow.swift */,
 			);
-			name = RicSliderViewController;
 			path = RicSliderViewController;
 			sourceTree = "<group>";
 		};
@@ -432,9 +431,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BB79AC9D9E892BF9449714113C8F2E8 /* RicMenuViewController.swift in Sources */,
+				5BB79AC9D9E892BF9449714113C8F2E8 /* RicMenuTableViewController.swift in Sources */,
 				89137A0DEC74FE9625D991F9A8135AA8 /* RicSliderViewController-dummy.m in Sources */,
-				53F4DE10D66B2DE7FBDCF0C984E60CBE /* RicSliderViewController.swift in Sources */,
+				53F4DE10D66B2DE7FBDCF0C984E60CBE /* RicSliderNavigationViewController.swift in Sources */,
 				461FBFF519F8FA11C2409DFDEA29E8F8 /* RicWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

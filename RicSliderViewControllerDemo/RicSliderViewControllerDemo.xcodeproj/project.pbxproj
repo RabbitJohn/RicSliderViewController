@@ -591,9 +591,10 @@
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RicSliderViewController\"",
 				);
 				INFOPLIST_FILE = RicSliderViewControllerDemo/Info.plist;
+
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rice.creation.RicSliderViewControllerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rice.creation.RicSliderViewControllerDemo1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -610,9 +611,10 @@
 					"\"$PODS_CONFIGURATION_BUILD_DIR/RicSliderViewController\"",
 				);
 				INFOPLIST_FILE = RicSliderViewControllerDemo/Info.plist;
+
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rice.creation.RicSliderViewControllerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rice.creation.RicSliderViewControllerDemo1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

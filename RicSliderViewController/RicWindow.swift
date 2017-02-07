@@ -11,8 +11,8 @@ import UIKit
 open class RicWindow: UIWindow {
     
     fileprivate let bottomVC:UIViewController = UIViewController.init()
-    fileprivate let menuViewController:RicMenuViewController = RicMenuViewController()
-    fileprivate let topVC:RicSliderViewController = RicSliderViewController()
+    fileprivate var menuViewController:UIViewController = RicMenuTableViewController()
+    fileprivate let topVC:RicSliderNavigationViewController = RicSliderNavigationViewController()
     
     open var enableSlider:Bool = true
     
@@ -23,7 +23,9 @@ open class RicWindow: UIWindow {
         self.rootViewController = self.bottomVC
         self.addSubViews()
         self.setUpContentViewFrame(self.bounds)
+        self.setSubBgColors()
     }
+    
     
     public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -41,7 +43,7 @@ extension RicWindow{
         self.topVC.view.frame = self.bounds
     }
     fileprivate func setSubBgColors(){
-        self.menuViewController.view.backgroundColor = UIColor.red
-        self.topVC.view.backgroundColor = UIColor.yellow
+        self.menuViewController.view.backgroundColor = UIColor.yellow
+        self.topVC.view.backgroundColor = UIColor.red
     }
 }
